@@ -1,0 +1,8 @@
+<input type="text" #fullname  [value]="passObj.fullname" class="form-control mb-2" [disabled]="flag">
+<p>
+    Check In Date : {{passObj.checkInDate ? (passObj.checkInDate | date) : "Not Cheked In"}}
+</p>
+<button class="btn btn-primary" (click)="flag = !flag; onDoneClick(fullname.value)"
+ [innerText]="flag  ? 'Edit' : 'Done'"></button>
+
+<button class="ml-4 btn btn-danger" (click)="onRemove()">Remove</button>

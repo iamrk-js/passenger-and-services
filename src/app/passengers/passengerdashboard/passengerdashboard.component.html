@@ -1,0 +1,8 @@
+<app-pass-count [checkInpassCount]="checkInpass" [totalPassCount]="passArray.length"></app-pass-count>
+
+<p *ngFor="let pass of passArray">
+    {{pass.fullname}}
+</p>
+<app-pass-details *ngFor="let pass of passArray" 
+[passObj]="pass"
+(emitPassData)="updatePassData($event)"></app-pass-details>

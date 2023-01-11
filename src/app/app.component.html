@@ -1,0 +1,53 @@
+<!-- services 
+   The services in angular are the functions that are accessble and reusable
+   in all componentes
+
+   services >> that manage your data
+   DRY
+-->
+<div class="container mt-4">
+   <div class="row">
+      <div class="col-sm-12">
+         <app-passengerdashboard></app-passengerdashboard>
+         <!-- <div class="formDiv">
+            <h4>Product Details</h4>
+            <div class="form-group">
+               <label for="pName">
+                  Product Name
+               </label>
+               <input type="text" class="form-control" #pName>
+            </div>
+            <div class="form-group">
+               <label for="pDetails">
+                  Product Details
+               </label>
+               <textarea type="text" class="form-control" #pDetails></textarea>
+            </div>
+            <div class="text-right">
+               <button class="btn btn-primary" 
+               (click)="onProductOrdered(pName.value, pDetails.value); pName.value = ''; pDetails.value = ''">
+                  Order Now
+               </button>
+            </div>
+         </div>
+
+         <hr>
+         <div class="card mb-3" *ngFor="let prod of pruductsArray">
+            {{prod | json}}
+            <div class="card-header">
+               {{prod.pName}}
+            </div>
+            <div class="card-body">
+               <p>
+                  You have ordered <strong>{{prod.pName}}</strong> and its status is <strong>{{prod.pStatus}}</strong>
+               </p>
+               <p>
+                  <button class="btn btn-success mr-2" (click)="changeStatus('In Progress', prod.id)">In Progress</button>
+                  <button class="btn btn-success mr-2" (click)="changeStatus('Dispatched', prod.id)">Dispatched</button>
+                  <button class="btn btn-success mr-2" (click)="changeStatus('Delivered', prod.id)">Delivered</button>
+               </p>
+            </div>
+         </div> -->
+      </div>
+   </div>
+</div>
